@@ -19,7 +19,9 @@ helm:
     cve:
       scanner:
         replicas: 1
-
+    
+    docker:
+      path: /var/run/docker.sock
     k3s:
-      enabled: true
+      enabled: false #true
     
