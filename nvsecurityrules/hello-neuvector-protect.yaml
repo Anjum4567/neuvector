@@ -1,7 +1,7 @@
 ﻿apiVersion: neuvector.com/v1
 kind: NvSecurityRule
 metadata:
-  name: nv.hello-neuvector.hello-neuvector
+  name: nv.hello-neuvector.cattle-neuvector-system
   namespace: cattle-neuvector-system
 spec:
   egress: []
@@ -35,11 +35,11 @@ spec:
       criteria:
       - key: service
         op: =
-        value: hello-neuvector.hello-neuvector
+        value: hello-neuvector.cattle-neuvector-system
       - key: domain
         op: =
         value: hello-neuvector
-      name: nv.hello-neuvector.hello-neuvector
+      name: nv.hello-neuvector.cattle-neuvector-system
       original_name: ""
   waf:
     settings: []
