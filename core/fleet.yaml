@@ -17,7 +17,14 @@ helm:
     manager:
       svc:
         type: NodePort
-
+      data: 
+        my-2nd-cluster.yaml:
+         Cluster_Name: kubecon-demo 
+         users: 
+         - Fullname: Default Admin  
+           Username: admin
+           Role: admin 
+           Password: rancherrancher
     cve:
       scanner:
         replicas: 3
