@@ -5,7 +5,9 @@ helm:
     controller:
       replicas: 3
       ranchersso:
-        enabled: false
+        enabled: true
+      secret: 
+        enabled: true 
 
     cve:
       scanner:
@@ -17,3 +19,4 @@ helm:
     global:
       cattle:
         url: https://rancher.susedemo.com/
+   
