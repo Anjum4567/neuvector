@@ -14,7 +14,7 @@ helm:
         replicas: 3
 
     k3s:
-      enabled: false
+      enabled: true
 
     global:
       cattle:
